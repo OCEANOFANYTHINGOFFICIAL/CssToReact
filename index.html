@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <link rel="shortcut icon" href="https://oceanofanythingg.blogspot.com/favicon.ico" type="image/x-icon">
+        <meta name="Description"
+                CONTENT="Easy online tool for transforming CSS into Facebook React style JSON. Great for copy/pasting without the translation errors.">
+        <link href='font/Inconsolata.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Convert Css to React Style JSON by staxmanade</title>
+</head>
+
+<body>
+        <div id="container">
+                <div class="inner">
+                        <header class="header">
+                                <img class="logo logo-img" alt="CSS to React Logo" src="images/CssToReact-logo.svg" />
+                        </header>
+                        <div id="loader">
+                                <div class="sk-cube-grid">
+                                        <div class="sk-cube sk-cube1"></div>
+                                        <div class="sk-cube sk-cube2"></div>
+                                        <div class="sk-cube sk-cube3"></div>
+                                        <div class="sk-cube sk-cube4"></div>
+                                        <div class="sk-cube sk-cube5"></div>
+                                        <div class="sk-cube sk-cube6"></div>
+                                        <div class="sk-cube sk-cube7"></div>
+                                        <div class="sk-cube sk-cube8"></div>
+                                        <div class="sk-cube sk-cube9"></div>
+                                </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="toolDesc">
+                                This simple little tool is intended to help translate plain <code>CSS</code> into the <a
+                                        href="https://facebook.github.io/react/tips/inline-styles.html">React in-line
+                                        style</a> specific JSON
+                                representation. Making it easy to copy and paste into an inline
+                                React component. This Online Tool Is Specially Made By Nakshatra Ranjan Saha (OCEAN OF
+                                ANYTHING)
+                        </p>
+                        <main id="main"></main>
+                        <footer>
+                                Copyright &copy; 2021 - 3021 CSS To React <a
+                                        href="https://oceanofanythingg.blogspot.com">Nakshatra Ranjan Saha (OCEAN OF
+                                        ANYTHING)</a>
+                        </footer>
+                </div>
+        </div>
+        <script src="js/system.js"></script>
+        <script src="js/system.js.map"></script>
+        <script src="js/jspm.browser.js"></script>
+        <script src="js/jspm.config.js"></script>
+        <script src="js/clipboard.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script>
+                function startApp() {
+                        SystemJS.import('app');
+                }
+                if (System.production) {
+                        System.import('./build.js').then(startApp);
+                } else {
+                        startApp();
+                }
+        </script>
+        <script async src="js/clipboard.min.js" onload="new ClipboardJS('.copy-to-clipboard');"></script>
+</body>
+
+</html>
