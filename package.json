@@ -108,7 +108,7 @@
     }
   },
   "devDependencies": {
-    "jspm": "3.3.2",
+    "jspm": "3.3.3",
     "nws": "1.1.1"
   }
 }
